@@ -11,9 +11,11 @@ def randomcolor():
             colorcode ='color '+c1+c2
             system(colorcode)
             break
-
-print('\t\t *#*#*#*#*#*#*#*#*#* Welcome to Hangman v1.0 *#*#*#*#*#*#*#*#*#*')
-dictionary=(open(r'C:/Users/Home/Desktop/dictionary4hangman.txt').readlines())
+VERSION='0.2-alpha'
+print('\t\t Welcome to Hangman '+VERSION)
+print('\nCopyright (C) 2020 Aditya Anand - All Rights Reserved. You may use, distribute and modify this code under the terms of the GNU General Public License v3.0\n')
+print('Source code can be found here. https://github.com/mark-IV-II/Project_hangman.git\n')
+dictionary=(open(r'dictionary4hangman.txt').readlines())
 
 replay=True
 while(replay):
@@ -58,5 +60,5 @@ while(replay):
     if replay_prompt.lower()=='n':
         replay=False
 
-print('\n\t\t *=*=*=*=*=*=*=*=*=* Thank you for playing Hangman *=*=*=*=*=*=*=*=*=*')
+print('\n\t\t Thank you for playing Hangman')
 sleep(2)
