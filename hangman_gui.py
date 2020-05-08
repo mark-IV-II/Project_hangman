@@ -112,7 +112,7 @@ def check_ans(event=None):
                 params.score-=1
                 params.missed+=(char+',')
     
-            if char in word :
+            if char in word and char not in ans :
 
                 for i in range(0,word_length):
 
