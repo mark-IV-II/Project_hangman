@@ -6,7 +6,12 @@ from random import choice
 from tkinter import messagebox
 
 
+def load_data():
 
+    dictionary_location=os.path.join(".","data","dictionary4hangman.txt")
+    f=open(dictionary_location)
+    return f.readlines()
+ 
  
 class parameters:
 
@@ -20,7 +25,7 @@ class parameters:
 
     def choose_word(self):
 
-        dictionary=(open(r'dictionary4hangman.txt').readlines())
+        dictionary=load_data()
         self.word=(choice(dictionary).strip())
         self.word=self.word.upper()
         return self.word
