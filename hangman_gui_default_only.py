@@ -1,3 +1,5 @@
+#This script uses only modules/packages from default python installation, ie, no third party modules were used to build this
+
 import sys
 import tkinter
 from random import choice
