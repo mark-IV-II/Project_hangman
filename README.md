@@ -1,7 +1,7 @@
 # Project_hangman
 Simple Hangman game implementation in python
 
-Please go through GUI branch for GUI based implementation of the same
+Please go through GUI branch for GUI based implementation of the same (comes with cool sound effects)
 
 
 Screenshots
